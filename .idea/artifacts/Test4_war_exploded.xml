@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" build-on-make="true" name="Test4:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Test4_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Test4/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Test4" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/Test4/web/WEB-INF/lib/gson-2.2.4.jar" />
+          <element id="library" level="module" name="taglibs-standard-impl-1.2.1" module-name="Test4" />
+          <element id="library" level="module" name="commons-fileupload-1.2.1" module-name="Test4" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

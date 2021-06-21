@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="test5:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/test5_war</output-path>
+    <root id="archive" name="test5_war.war">
+      <element id="artifact" artifact-name="test5:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/test5/web/WEB-INF/lib/gson-2.2.4.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

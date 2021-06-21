@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyPorjects/MyPorjects.iml" filepath="$PROJECT_DIR$/MyPorjects/MyPorjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test1/Test1.iml" filepath="$PROJECT_DIR$/Test1/Test1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test2/Test2.iml" filepath="$PROJECT_DIR$/Test2/Test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test3/Test3.iml" filepath="$PROJECT_DIR$/Test3/Test3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Test4/Test4.iml" filepath="$PROJECT_DIR$/Test4/Test4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book/book.iml" filepath="$PROJECT_DIR$/book/book.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cookie_session/cookie_session.iml" filepath="$PROJECT_DIR$/cookie_session/cookie_session.iml" />
+      <module fileurl="file://$PROJECT_DIR$/filter/filter.iml" filepath="$PROJECT_DIR$/filter/filter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/json_ajax_i18n/json_ajax_i18n.iml" filepath="$PROJECT_DIR$/json_ajax_i18n/json_ajax_i18n.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBootTest/springBootTest.iml" filepath="$PROJECT_DIR$/springBootTest/springBootTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test5/test5.iml" filepath="$PROJECT_DIR$/test5/test5.iml" />
+    </modules>
+  </component>
+</project>

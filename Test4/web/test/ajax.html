@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="pragma" content="no-cache" />
+		<meta http-equiv="cache-control" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript">
+			//使用JavaScript语言发起Ajax请求，访问服务器AjaxServlet中的javaScriptAjax方法
+			//使用Ajax请求，浏览器地址不会发生改变，页面只会局部改变，不影响整个页面
+			function ajaxRequest() {
+// 				1、我们首先要创建XMLHttpRequest 
+				var xmlhttprequest = new XMLHttpRequest();
+// 				2、调用open方法设置请求参数
+				xmlhttprequest.open("GET","http://localhost:8084/Test4/testServlet?action=test1&username=ios",true);
+// 				4、在send方法前绑定onreadystatechange事件，处理请求完成后的操作。
+				xmlhttprequest.onreadystatechange = function () {
+					if(xmlhttprequest.readyState == 4 && xmlhttprequest.status == 200){
+						var jsonObj = JSON.parse(xmlhttprequest.responseText);
+						document.getElementById("div01").innerHTML = "姓名："+jsonObj.username;
+					}
+				}
+// 				3、调用send方法发送请求
+				xmlhttprequest.send();
+//同步请求就是等服务器响应返回数据后，再执行后面的代码。异步请求就是不用等待服务器的响应，直接先执行后面的代码。
+//异步请求对于用户体验来说非常有用：
+//如果是同步请求，需要等待服务器执行完当前操作才能继续执行下一个操作，用户体验极差。
+//如果是异步请求，服务器反应的同时，还可以进行其他请求操作，互不影响，用户体验良好。
+			}
+		</script>
+	</head>
+	<body>
+		<!--非Ajax请求，浏览器地址会发生改变，整个页面会发生改变-->
+		<a href="http://localhost:8084/json_ajax_i18n/ajaxServlet?action=javaScriptAjax">非Ajax请求</a>
+		<button onclick="ajaxRequest()">ajax request</button>
+		<div id="div01">
+		</div>
+	</body>
+</html>
